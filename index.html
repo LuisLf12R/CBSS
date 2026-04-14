@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case-Based Study Society (CBSS) at NYU — placeholder showcase website."
+    />
+    <title>CBSS @ NYU</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         Header / Navigation
+    ============================================= -->
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="#top" class="logo" aria-label="CBSS home">CBSS</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="desktopNav">
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-small">Join CBSS</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#cases">Cases</a>
+        <a href="#events">Events</a>
+        <a href="#team">Team</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-small">Join CBSS</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================================
+           Hero Section
+      ============================================= -->
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">NYU Student Organization</p>
+          <h1>Case-Based Study Society @ NYU</h1>
+          <p class="hero-subtitle">
+            Solving real-world business problems through structured case study
+            analysis.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#cases">Get Started</a>
+            <a class="btn btn-outline" href="#events">View Events</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           Cases Section
+      ============================================= -->
+      <section class="section" id="cases">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Case Library</h2>
+            <p>Placeholder content designed to demonstrate layout and styling.</p>
+          </div>
+
+          <div class="filter-row" role="group" aria-label="Case filters">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="consulting">Consulting</button>
+            <button class="filter-chip" data-filter="finance">Finance</button>
+            <button class="filter-chip" data-filter="marketing">Marketing</button>
+            <button class="filter-chip" data-filter="tech">Tech</button>
+          </div>
+
+          <div class="grid cases-grid" id="casesGrid">
+            <!-- Sample cards are rendered by script.js for easy replacement later -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           Events Section
+      ============================================= -->
+      <section class="section section-accent" id="events">
+        <div class="container">
+          <div class="section-header">
+            <h2>What's Coming Up</h2>
+            <p>Upcoming placeholder events for demonstration.</p>
+          </div>
+
+          <article class="featured-event card">
+            <div class="date-badge">
+              <span>APR</span>
+              <strong>28</strong>
+            </div>
+            <div>
+              <h3>Flagship Strategy Case Workshop</h3>
+              <p>
+                A featured placeholder event to highlight your most important
+                upcoming session.
+              </p>
+              <a class="btn btn-small" href="#contact">Sign Up</a>
+            </div>
+          </article>
+
+          <div class="grid events-grid" id="eventsGrid">
+            <!-- Sample cards are rendered by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           Team Section
+      ============================================= -->
+      <section class="section" id="team">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet the Team</h2>
+            <p>Placeholder executive board cards, easy to replace later.</p>
+          </div>
+          <div class="grid team-grid" id="teamGrid">
+            <!-- Team cards are rendered by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           About / Mission Section
+      ============================================= -->
+      <section class="section section-accent" id="about">
+        <div class="container about-grid">
+          <article>
+            <h2>What is CBSS?</h2>
+            <p>
+              CBSS is a placeholder description block for your future official
+              copy. Replace this with your organization overview.
+            </p>
+          </article>
+          <article>
+            <h2>Our Mission</h2>
+            <p>
+              Our mission statement will go here. This block demonstrates a
+              clean two-column content format for your finalized messaging.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================
+           Contact Section
+      ============================================= -->
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <article>
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to collaborate, join, or learn more? Use the form and we’ll
+              follow up.
+            </p>
+            <p><strong>Email:</strong> cbss@nyu.edu (placeholder)</p>
+            <p><strong>Social:</strong> LinkedIn | Instagram (placeholders)</p>
+          </article>
+
+          <form id="contactForm" class="card contact-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+            <p class="form-note">
+              Demo mode: Connect this form to Formspree later in production.
+            </p>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================
+         Footer
+    ============================================= -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> CBSS @ NYU. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#cases">Cases</a>
+          <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
