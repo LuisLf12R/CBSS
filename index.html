@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Case-Based Study Society @ NYU — premium, accessible v2 starter website with placeholder content."
+    />
+    <title>CBSS @ NYU | Case-Based Study Society</title>
+
+    <!-- Typography pair: serif + sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="announcement" aria-label="Announcement">
+        <div class="container">
+          <p>
+            Applications open soon • Placeholder text for important CBSS updates.
+          </p>
+        </div>
+      </div>
+
+      <nav class="container nav" aria-label="Main">
+        <a class="brand" href="#top" aria-label="CBSS home">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span>CBSS @ NYU</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="desktopNav">
+          <li><a href="#featured-case">Featured</a></li>
+          <li><a href="#case-library">Cases</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary btn-sm" href="#event-signup">Apply</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#featured-case">Featured</a>
+        <a href="#case-library">Cases</a>
+        <a href="#events">Events</a>
+        <a href="#team">Team</a>
+        <a href="#stories">Stories</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="#event-signup">Apply to CBSS</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">NYU Student Organization</p>
+            <h1 id="hero-title">Case-Based Study Society</h1>
+            <p class="hero-subtitle">
+              Solve real-world business challenges through collaborative case
+              analysis, mentorship, and community-led learning.
+            </p>
+            <div class="hero-proof" role="status" aria-live="polite">
+              Trusted by 500+ NYU students (placeholder metric)
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-accent" href="#event-signup">Join CBSS</a>
+              <a class="btn btn-outline" href="#case-library">Explore Cases</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel card-glass" aria-label="CBSS quick highlights">
+            <h2>Why students join</h2>
+            <ul>
+              <li>Structured case practice every week</li>
+              <li>Mentorship from peers and alumni</li>
+              <li>Competition and recruiting preparation</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Featured case -->
+      <section class="section" id="featured-case" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Spotlight</p>
+            <h2 id="featured-title">Featured Flagship Case</h2>
+          </div>
+
+          <article class="featured-case card">
+            <img
+              src="assets/images/featured-case-placeholder.jpg"
+              alt="Placeholder visual for featured business case"
+              loading="lazy"
+            />
+            <div>
+              <span class="badge badge-consulting">Consulting</span>
+              <h3>Market Entry Strategy: Fintech in LATAM</h3>
+              <p>
+                This placeholder featured case demonstrates how to highlight your
+                best content with a strong visual and concise summary.
+              </p>
+              <div class="meta-row">
+                <span>April 2026</span>
+                <span>Advanced</span>
+              </div>
+              <a class="btn btn-primary" href="#case-library">Explore Library</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Case library -->
+      <section class="section section-muted" id="case-library" aria-labelledby="cases-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Learning Library</p>
+            <h2 id="cases-title">Case Library</h2>
+            <p>Search and filter placeholder cases by category and year.</p>
+          </div>
+
+          <div class="toolbar" role="region" aria-label="Case filters and search">
+            <label class="search-wrap" for="caseSearch">
+              <span class="sr-only">Search cases</span>
+              <input
+                id="caseSearch"
+                type="search"
+                placeholder="Search by title or keyword"
+                autocomplete="off"
+              />
+            </label>
+
+            <div class="chip-row" role="group" aria-label="Filter by category">
+              <button class="chip active" data-case-filter="all">All</button>
+              <button class="chip" data-case-filter="consulting">Consulting</button>
+              <button class="chip" data-case-filter="finance">Finance</button>
+              <button class="chip" data-case-filter="tech">Tech</button>
+              <button class="chip" data-case-filter="marketing">Marketing</button>
+            </div>
+
+            <label class="year-select" for="caseYear">
+              Year
+              <select id="caseYear">
+                <option value="all">All</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="card-grid cases-grid" id="casesGrid"></div>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section class="section" id="events" aria-labelledby="events-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Events</p>
+            <h2 id="events-title">Upcoming Events</h2>
+          </div>
+
+          <div class="events-topbar">
+            <p class="countdown" id="nextEventCountdown" aria-live="polite">
+              Next event countdown loading...
+            </p>
+            <div class="view-toggle" role="group" aria-label="Event layout toggle">
+              <button class="chip active" data-event-view="cards">Cards</button>
+              <button class="chip" data-event-view="timeline">Timeline</button>
+            </div>
+          </div>
+
+          <div id="eventsCards" class="card-grid events-grid"></div>
+          <div id="eventsTimeline" class="timeline" hidden></div>
+
+          <p class="section-link">
+            <a href="#contact">View full events archive (placeholder)</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-muted" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">About CBSS</p>
+            <h2 id="about-title">A community for applied business thinking</h2>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat card"><strong>200+</strong><span>Members</span></article>
+            <article class="stat card"><strong>50+</strong><span>Cases analyzed</span></article>
+            <article class="stat card"><strong>2019</strong><span>Founded</span></article>
+          </div>
+
+          <div class="pillars-grid">
+            <article class="card">
+              <h3>Cases</h3>
+              <p>Weekly case sessions focused on structured problem solving.</p>
+            </article>
+            <article class="card">
+              <h3>Competitions</h3>
+              <p>Team-based competitions that build confidence and rigor.</p>
+            </article>
+            <article class="card">
+              <h3>Mentorship</h3>
+              <p>Guidance from upperclassmen, alumni, and partner professionals.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="section" id="team" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">People</p>
+            <h2 id="team-title">Meet the Team</h2>
+          </div>
+
+          <div class="chip-row" role="group" aria-label="Team role filters">
+            <button class="chip active" data-team-filter="all">All</button>
+            <button class="chip" data-team-filter="leadership">Leadership</button>
+            <button class="chip" data-team-filter="board">Board</button>
+            <button class="chip" data-team-filter="general">General</button>
+          </div>
+
+          <figure class="team-photo card">
+            <img
+              src="assets/images/team-group-placeholder.jpg"
+              alt="Placeholder group photo for CBSS team"
+              loading="lazy"
+            />
+            <figcaption>Group photo placeholder — replace with official team image.</figcaption>
+          </figure>
+
+          <div class="card-grid team-grid" id="teamGrid"></div>
+        </div>
+      </section>
+
+      <!-- Stories -->
+      <section class="section section-muted" id="stories" aria-labelledby="stories-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Alumni & Member Stories</p>
+            <h2 id="stories-title">Where are they now?</h2>
+          </div>
+
+          <div class="stories-carousel" aria-label="Member stories carousel">
+            <button class="carousel-btn" id="storyPrev" aria-label="Previous story">←</button>
+            <article class="story-card card" id="storyCard"></article>
+            <button class="carousel-btn" id="storyNext" aria-label="Next story">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event signup -->
+      <section class="section" id="event-signup" aria-labelledby="event-signup-title">
+        <div class="container form-layout">
+          <article>
+            <h2 id="event-signup-title">Quick Event Signup</h2>
+            <p>
+              Placeholder signup flow for your next workshop or case competition.
+            </p>
+          </article>
+
+          <form id="eventSignupForm" class="card form-card" novalidate>
+            <label for="signupName">Name</label>
+            <input id="signupName" name="signupName" type="text" placeholder="Alex Kim" required />
+
+            <label for="signupEmail">Email</label>
+            <input
+              id="signupEmail"
+              name="signupEmail"
+              type="email"
+              placeholder="ak1234@nyu.edu"
+              required
+            />
+
+            <label for="signupEvent">Event</label>
+            <select id="signupEvent" name="signupEvent" required>
+              <option value="">Choose an event</option>
+              <option>Case Interview Foundations</option>
+              <option>Mentor Roundtable</option>
+              <option>Spring Case Competition</option>
+            </select>
+
+            <label for="signupExperience">Experience level (optional)</label>
+            <select id="signupExperience" name="signupExperience">
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+
+            <button class="btn btn-primary" type="submit">Save Spot</button>
+            <p id="eventSignupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-muted" id="contact" aria-labelledby="contact-title">
+        <div class="container form-layout">
+          <article>
+            <h2 id="contact-title">Get in touch</h2>
+            <p>
+              Replace this block with your real contact details, office hours,
+              and collaboration process.
+            </p>
+            <p><strong>Email:</strong> cbss@nyu.edu (placeholder)</p>
+            <p><strong>Meeting:</strong> Stern / Bobst (placeholder)</p>
+          </article>
+
+          <form id="contactForm" class="card form-card" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@nyu.edu"
+              required
+            />
+
+            <label for="role">I am reaching out as</label>
+            <select id="role" name="role" required>
+              <option value="">Select one</option>
+              <option value="student">Student</option>
+              <option value="alumni">Alumni</option>
+              <option value="partner">Industry partner</option>
+            </select>
+
+            <div id="conditionalField" hidden>
+              <label for="org">Organization (optional)</label>
+              <input id="org" name="org" type="text" placeholder="Company or club name" />
+            </div>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us why you are reaching out"
+              required
+            ></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note">Demo mode: wire to Formspree in production.</p>
+            <p id="contactMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <section>
+          <h2 class="footer-title">CBSS @ NYU</h2>
+          <p>
+            Premium placeholder shell for your final organization website.
+          </p>
+          <p>Join 300+ members receiving updates (placeholder).</p>
+          <form id="newsletterForm" class="newsletter" novalidate>
+            <label class="sr-only" for="newsletterEmail">Email for newsletter</label>
+            <input
+              id="newsletterEmail"
+              type="email"
+              placeholder="Enter NYU email"
+              required
+            />
+            <button class="btn btn-accent btn-sm" type="submit">Subscribe</button>
+          </form>
+          <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+        </section>
+
+        <section>
+          <h2 class="footer-title">Quick Links</h2>
+          <ul>
+            <li><a href="#case-library">Programs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#stories">Resources</a></li>
+            <li><a href="#contact">Connect</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-title">Connect</h2>
+          <ul>
+            <li><a href="#" aria-label="LinkedIn placeholder">LinkedIn</a></li>
+            <li><a href="#" aria-label="Instagram placeholder">Instagram</a></li>
+            <li><a href="mailto:cbss@nyu.edu">cbss@nyu.edu</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> CBSS @ NYU. Built for accessibility and growth.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
