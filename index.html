@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Case-Based Study Society (CBSS) at NYU — placeholder showcase website."
+      content="NYU SPS Consulting and Business Strategy Society (CBSS) website featuring events, programs, and public links."
     />
-    <title>CBSS @ NYU</title>
+    <title>CBSS @ NYU SPS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ============================================
-         Header / Navigation
-    ============================================= -->
     <header class="site-header" id="top">
       <nav class="container nav" aria-label="Main navigation">
-        <a href="#top" class="logo" aria-label="CBSS home">CBSS</a>
+        <a href="#top" class="logo" aria-label="CBSS home">CBSS @ NYU SPS</a>
 
         <button
           class="menu-toggle"
@@ -31,149 +28,168 @@
         </button>
 
         <ul class="nav-links" id="desktopNav">
-          <li><a href="#cases">Cases</a></li>
+          <li><a href="#programs">Programs</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#team">Connect</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#contact" class="btn btn-small">Join CBSS</a></li>
+          <li>
+            <a
+              href="https://linktr.ee/sps.cbss?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTeo1a8HYmlj4HX17Z87xFNwCb3_djKQd03e_X0oXa2iYTqewK5O_t943Liw_aem_x_YIpsxtmFN2k-beH6b-0w"
+              class="btn btn-small"
+              target="_blank"
+              rel="noreferrer"
+              >Join CBSS</a
+            >
+          </li>
         </ul>
       </nav>
 
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#cases">Cases</a>
+        <a href="#programs">Programs</a>
         <a href="#events">Events</a>
-        <a href="#team">Team</a>
+        <a href="#team">Connect</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-small">Join CBSS</a>
+        <a
+          href="https://linktr.ee/sps.cbss?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTeo1a8HYmlj4HX17Z87xFNwCb3_djKQd03e_X0oXa2iYTqewK5O_t943Liw_aem_x_YIpsxtmFN2k-beH6b-0w"
+          class="btn btn-small"
+          target="_blank"
+          rel="noreferrer"
+          >Join CBSS</a
+        >
       </div>
     </header>
 
     <main>
-      <!-- ============================================
-           Hero Section
-      ============================================= -->
       <section class="hero">
         <div class="container hero-content">
-          <p class="eyebrow">NYU Student Organization</p>
-          <h1>Case-Based Study Society @ NYU</h1>
+          <p class="eyebrow">NYU School of Professional Studies</p>
+          <h1>Consulting &amp; Business Strategy Society</h1>
           <p class="hero-subtitle">
-            Solving real-world business problems through structured case study
-            analysis.
+            A platform for NYU SPS students to explore consulting through case
+            competitions, skill-building events, alumni panels, and live
+            projects with real-world clients.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#cases">Get Started</a>
-            <a class="btn btn-outline" href="#events">View Events</a>
+            <a class="btn" href="#events">View Events</a>
+            <a class="btn btn-outline" href="#team">Connect With CBSS</a>
           </div>
         </div>
       </section>
 
-      <!-- ============================================
-           Cases Section
-      ============================================= -->
-      <section class="section" id="cases">
+      <section class="section" id="programs">
         <div class="container">
           <div class="section-header">
-            <h2>Our Case Library</h2>
-            <p>Placeholder content designed to demonstrate layout and styling.</p>
+            <h2>Programs &amp; Highlights</h2>
+            <p>
+              A first live pass of CBSS programming, partnerships, and public
+              channels based on the information currently available.
+            </p>
           </div>
 
-          <div class="filter-row" role="group" aria-label="Case filters">
+          <div class="filter-row" role="group" aria-label="Program filters">
             <button class="filter-chip active" data-filter="all">All</button>
             <button class="filter-chip" data-filter="consulting">Consulting</button>
-            <button class="filter-chip" data-filter="finance">Finance</button>
-            <button class="filter-chip" data-filter="marketing">Marketing</button>
-            <button class="filter-chip" data-filter="tech">Tech</button>
+            <button class="filter-chip" data-filter="partnerships">Partnerships</button>
+            <button class="filter-chip" data-filter="community">Community</button>
+            <button class="filter-chip" data-filter="digital">Digital</button>
           </div>
 
-          <div class="grid cases-grid" id="casesGrid">
-            <!-- Sample cards are rendered by script.js for easy replacement later -->
-          </div>
+          <div class="grid cases-grid" id="casesGrid"></div>
         </div>
       </section>
 
-      <!-- ============================================
-           Events Section
-      ============================================= -->
       <section class="section section-accent" id="events">
         <div class="container">
           <div class="section-header">
-            <h2>What's Coming Up</h2>
-            <p>Upcoming placeholder events for demonstration.</p>
+            <h2>Upcoming &amp; Current Events</h2>
+            <p>
+              Real CBSS programming pulled from your public NYU Engage and social
+              presence.
+            </p>
           </div>
 
-          <article class="featured-event card">
-            <div class="date-badge">
-              <span>APR</span>
-              <strong>28</strong>
-            </div>
-            <div>
-              <h3>Flagship Strategy Case Workshop</h3>
-              <p>
-                A featured placeholder event to highlight your most important
-                upcoming session.
-              </p>
-              <a class="btn btn-small" href="#contact">Sign Up</a>
-            </div>
-          </article>
+          <article class="featured-event card" id="featuredEvent"></article>
 
-          <div class="grid events-grid" id="eventsGrid">
-            <!-- Sample cards are rendered by script.js -->
-          </div>
+          <div class="grid events-grid" id="eventsGrid"></div>
         </div>
       </section>
 
-      <!-- ============================================
-           Team Section
-      ============================================= -->
       <section class="section" id="team">
         <div class="container">
           <div class="section-header">
-            <h2>Meet the Team</h2>
-            <p>Placeholder executive board cards, easy to replace later.</p>
+            <h2>Connect With CBSS</h2>
+            <p>
+              Public channels, official hubs, and live pages where people can
+              find the organization right now.
+            </p>
           </div>
-          <div class="grid team-grid" id="teamGrid">
-            <!-- Team cards are rendered by script.js -->
-          </div>
+          <div class="grid team-grid" id="teamGrid"></div>
         </div>
       </section>
 
-      <!-- ============================================
-           About / Mission Section
-      ============================================= -->
       <section class="section section-accent" id="about">
         <div class="container about-grid">
           <article>
             <h2>What is CBSS?</h2>
             <p>
-              CBSS is a placeholder description block for your future official
-              copy. Replace this with your organization overview.
+              The Consulting &amp; Business Strategy Society at NYU SPS provides a
+              platform for students to explore careers in consulting through
+              case competitions, skill-building events, alumni panels, and live
+              projects with real-world clients.
             </p>
           </article>
           <article>
             <h2>Our Mission</h2>
             <p>
-              Our mission statement will go here. This block demonstrates a
-              clean two-column content format for your finalized messaging.
+              CBSS aims to bridge academic learning with practical application
+              while building a community of curious problem-solvers and
+              innovative thinkers across NYU SPS.
             </p>
           </article>
         </div>
       </section>
 
-      <!-- ============================================
-           Contact Section
-      ============================================= -->
       <section class="section" id="contact">
         <div class="container contact-grid">
           <article>
             <h2>Get In Touch</h2>
             <p>
-              Ready to collaborate, join, or learn more? Use the form and we’ll
-              follow up.
+              Interested in joining, collaborating, or learning more about CBSS?
+              Reach out directly or use one of the public channels below.
             </p>
-            <p><strong>Email:</strong> cbss@nyu.edu (placeholder)</p>
-            <p><strong>Social:</strong> LinkedIn | Instagram (placeholders)</p>
+            <p><strong>Email:</strong> <a class="inline-link" href="mailto:sps.cbss@nyu.edu">sps.cbss@nyu.edu</a></p>
+            <div class="link-list">
+              <a
+                class="inline-link"
+                href="https://engage.nyu.edu/organization/cbss"
+                target="_blank"
+                rel="noreferrer"
+                >NYU Engage Organization Page</a
+              >
+              <a
+                class="inline-link"
+                href="https://www.instagram.com/nyu.sps.cbss/"
+                target="_blank"
+                rel="noreferrer"
+                >Instagram</a
+              >
+              <a
+                class="inline-link"
+                href="https://www.linkedin.com/company/consulting-and-business-strategy-society/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="inline-link"
+                href="https://linktr.ee/sps.cbss?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTeo1a8HYmlj4HX17Z87xFNwCb3_djKQd03e_X0oXa2iYTqewK5O_t943Liw_aem_x_YIpsxtmFN2k-beH6b-0w"
+                target="_blank"
+                rel="noreferrer"
+                >Linktree</a
+              >
+            </div>
           </article>
 
           <form id="contactForm" class="card contact-form" novalidate>
@@ -188,7 +204,8 @@
 
             <button type="submit" class="btn">Submit</button>
             <p class="form-note">
-              Demo mode: Connect this form to Formspree later in production.
+              Demo mode: connect this form to your preferred inbox or Formspree
+              later.
             </p>
             <p class="form-message" id="formMessage" aria-live="polite"></p>
           </form>
@@ -196,17 +213,14 @@
       </section>
     </main>
 
-    <!-- ============================================
-         Footer
-    ============================================= -->
     <footer class="site-footer">
       <div class="container footer-grid">
-        <p>© <span id="year"></span> CBSS @ NYU. All rights reserved.</p>
+        <p>© <span id="year"></span> CBSS @ NYU SPS. All rights reserved.</p>
         <div class="footer-links">
-          <a href="#cases">Cases</a>
+          <a href="#programs">Programs</a>
           <a href="#events">Events</a>
-          <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
+          <a href="#team">Connect</a>
+          <a href="https://engage.nyu.edu/organization/cbss" target="_blank" rel="noreferrer">NYU Engage</a>
         </div>
       </div>
     </footer>
